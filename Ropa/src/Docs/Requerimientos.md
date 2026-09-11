@@ -1,4 +1,4 @@
-﻿Estoy desarrollando un laboratorio de automatización con React.
+Estoy desarrollando un laboratorio de automatización con React.
 
 El proyecto ya está creado con Vite + React y se llama `ropa`.
 
@@ -62,6 +62,7 @@ REQUISITOS OBLIGATORIOS:
 [x] Crear un diseño de tienda de ropa limpio y moderno.
 [x] Hacer la interfaz responsive.
 [x] Utilizar únicamente `App.css` para los estilos.
+[x] Incluir en `README.md` instrucciones para instalar y ejecutar el proyecto.
 
 DISTRIBUCIÓN DE RESPONSABILIDADES:
 
@@ -156,4 +157,3 @@ npm run dev
 
 No modifiques `package.json` salvo que sea estrictamente necesario.
 No utilices Axios, Bootstrap, Tailwind, React Router ni otras librerías.
-

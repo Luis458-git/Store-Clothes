@@ -58,7 +58,7 @@ function App() {
       <main id="inicio">
         <section className="intro" aria-labelledby="page-title">
           <div>
-            <p className="eyebrow">LINO / COLECCIÓN DE VESTIDOS</p>
+            <p className="eyebrow">LINO / ROPA Y CALZADO</p>
             <h1>Tu estilo.<br /><span>Todos los días.</span></h1>
           </div>
           <div className="intro-note">
@@ -70,7 +70,7 @@ function App() {
         <StatusCard estado={estado} ultimaActualizacion={ultimaActualizacion} error={error} />
         <section id="coleccion" className="collection" aria-labelledby="collection-title">
           <div className="collection-heading">
-            <div><p className="eyebrow">ELIGE TU FAVORITO</p><h2 id="collection-title">Vestidos de mujer</h2></div>
+            <div><p className="eyebrow">ELIGE TU FAVORITO</p><h2 id="collection-title">Ropa y calzado</h2></div>
             <div className="inventory-summary"><span>{productos.length} productos</span><span>{productosStockBajo} con stock bajo</span></div>
           </div>
           {productos.length > 0 ? (
@@ -78,7 +78,7 @@ function App() {
               {productos.map((producto) => <ProductCard key={producto.id} producto={producto} />)}
             </div>
           ) : (
-            <p className="empty-state">{estado === 'error' ? 'El catálogo no está disponible. Esperando la próxima revisión automática.' : estado === 'exito' ? 'No hay vestidos disponibles en este momento.' : 'Preparando la colección…'}</p>
+            <p className="empty-state">{estado === 'error' ? 'El catálogo no está disponible. Esperando la próxima revisión automática.' : estado === 'exito' ? 'No hay productos disponibles en este momento.' : 'Preparando la colección…'}</p>
           )}
           <p className="stock-note">Las etiquetas de stock bajo señalan productos con 5 unidades o menos.</p>
         </section>
@@ -89,3 +89,4 @@ function App() {
 }
 
 export default App
+
